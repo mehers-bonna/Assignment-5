@@ -43,7 +43,15 @@ for (let button of callButtons) {
         }
 
         const li = document.createElement('li');
-        li.innerHTML = `<span class="font-bold">${serviceName}</span><br>${serviceNumber}`;
+        const currentTime = new Date().toLocaleTimeString();
+        li.innerHTML = `
+        <div class="flex justify-between items-center">
+        <div>
+         <div class="font-bold">${serviceName}</div>
+         <div>${serviceNumber}</div>
+       </div>
+        <div>${currentTime}</div>
+       </div>`;
         li.style.backgroundColor = '#f2f2f2'
         li.style.borderRadius = '8px'
         li.style.padding = '10px'
@@ -57,6 +65,24 @@ for (let button of callButtons) {
             if(historyList) {
                 historyList.innerHTML = '';
             }
+        })
+    })
+}
+
+// copy button funtionality
+const copyButtons = document.getElementsByClassName('copy-button');
+const copyCounts = document.getElementById('copy-count');
+let copyCount = 0;
+for (let button of copyButtons) {
+    button.addEventListener('click', function(){
+        const card = button.closest('#helpline-section');
+        const number = card.querySelector('.helpline-number').innerText;
+        // copy to clipboard
+        navigator.clipboard.writeText(number).then(function() {
+            alert(`Number is copied: ${number} `);
+            // increase copy count
+            copyCount++;
+            copyCounts.innerText = copyCount;
         })
     })
 }

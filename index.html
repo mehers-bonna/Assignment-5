@@ -22,7 +22,7 @@
         <div class="flex items-center mt-6 md:mt-0">
             <div class="flex justify-center items-center w-[106px] h-[52px]
             rounded-3xl bg-[#41ff6b1a] mr-5">
-                <p class="mr-2 font-bold">0</p>
+                <p id="count-heart" class="mr-2 font-bold">0</p>
                 <img src="images/assets/heart.png" alt="" class="w-5 h-6"></div>
             <div class="flex justify-center items-center w-[106px] h-[52px]
             rounded-3xl bg-[#41ff6b1a] mr-5">
@@ -52,7 +52,7 @@
         <section id="helpline-section" class=" bg-white rounded-2xl shadow w-[372px] p-10">
             <div class="flex justify-between items-center ">
                 <img src="images/assets/emergency.png" alt="" class="w-[32px] h-[32px]">
-                <p><i class="fa-regular fa-heart"></i></p>
+                <p><i class="added-heart fa-regular fa-heart"></i></p>
             </div>
             <h3 class="font-bold mt-2 text-lg">National Emergency Number</h3>
             <p class="text-gray-500">National Emergency</p>
@@ -69,7 +69,7 @@
         <section id="helpline-section" class=" bg-white rounded-2xl shadow w-[372px] p-10">
             <div class="flex justify-between items-center ">
                 <img src="images/assets/police.png" alt="" class="w-[32px] h-[32px]">
-                <p><i class="fa-regular fa-heart"></i></p>
+                <p><i class="added-heart fa-regular fa-heart"></i></p>
             </div>
             <h3 class="font-bold mt-2 text-lg">Police Helpline Number</h3>
             <p class="text-gray-500 ">Police</p>
@@ -86,7 +86,7 @@
         <section id="helpline-section" class=" bg-white rounded-2xl shadow w-[372px] p-10">
             <div class="flex justify-between items-center ">
                 <img src="images/assets/fire-service.png" alt="" class="w-[32px] h-[32px]">
-                <p><i class="fa-regular fa-heart"></i></p>
+                <p><i class="added-heart fa-regular fa-heart"></i></p>
             </div>
             <h3 class="font-bold mt-2 text-lg">Fire Service Number</h3>
             <p class="text-gray-500">Fire Service</p>
@@ -103,7 +103,7 @@
         <section id="helpline-section" class=" bg-white rounded-2xl shadow w-[372px] p-10">
             <div class="flex justify-between items-center ">
                 <img src="images/assets/ambulance.png" alt="" class="w-[32px] h-[32px]">
-                <p><i class="fa-regular fa-heart"></i></p>
+                <p><i class="added-heart fa-regular fa-heart"></i></p>
             </div>
             <h3 class="font-bold mt-2 text-lg">Ambulance Service</h3>
             <p class="text-gray-500">Ambulance</p>
@@ -120,7 +120,7 @@
         <section id="helpline-section" class=" bg-white rounded-2xl shadow w-[372px] p-10">
             <div class="flex justify-between items-center ">
                 <img src="images/assets/emergency.png" alt="" class="w-[32px] h-[32px]">
-                <p><i class="fa-regular fa-heart"></i></p>
+                <p><i class="added-heart fa-regular fa-heart"></i></p>
             </div>
             <h3 class="font-bold mt-2 text-lg">Women & Child Helpline</h3>
             <p class="text-gray-500">Women & Child Helpline</p>
@@ -137,7 +137,7 @@
         <section id="helpline-section" class=" bg-white rounded-2xl shadow w-[372px] p-10">
             <div class="flex justify-between items-center ">
                 <img src="images/assets/emergency.png" alt="" class="w-[32px] h-[32px]">
-                <p><i class="fa-regular fa-heart"></i></p>
+                <p><i class="added-heart fa-regular fa-heart"></i></p>
             </div>
             <h3 class="font-bold mt-2 text-lg">Anti-Corruption Helpline</h3>
             <p class="text-gray-500">Anti-Corruption</p>
@@ -154,7 +154,7 @@
         <section id="helpline-section" class=" bg-white rounded-2xl shadow w-[372px] p-10">
             <div class="flex justify-between items-center ">
                 <img src="images/assets/emergency.png" alt="" class="w-[32px] h-[32px]">
-                <p><i class="fa-regular fa-heart"></i></p>
+                <p><i class="added-heart fa-regular fa-heart"></i></p>
             </div>
             <h3 class="font-bold mt-2 text-lg">Electricity Helpline</h3>
             <p class="text-gray-500">Electricity Outage</p>
@@ -171,7 +171,7 @@
         <section id="helpline-section" class=" bg-white rounded-2xl shadow w-[372px] p-10">
             <div class="flex justify-between items-center ">
                 <img src="images/assets/brac.png" alt="" class="w-[32px] h-[32px]">
-                <p><i class="fa-regular fa-heart"></i></p>
+                <p><i class="added-heart fa-regular fa-heart"></i></p>
             </div>
             <h3 class="font-bold mt-2 text-lg">Brac Helpline</h3>
             <p class="text-gray-500">Brac</p>
@@ -188,7 +188,7 @@
         <section id="helpline-section" class=" bg-white rounded-2xl shadow w-[372px] p-10">
             <div class="flex justify-between items-center ">
                 <img src="images/assets/Bangladesh-Railway.png" alt="" class="w-[32px] h-[32px]">
-                <p><i class="fa-regular fa-heart"></i></p>
+                <p><i class="added-heart fa-regular fa-heart"></i></p>
             </div>
             <h3 class="font-bold mt-2 text-lg">Bangladesh Railway Helpline </h3>
             <p class="text-gray-500">Bangladesh Railway</p>
@@ -205,13 +205,18 @@
         </section>
 
         <!-- call history section -->
-        <section id="history-section" class=" md:col-span-3 bg-white rounded-3xl">
+        <section id="history-section" class=" md:col-span-3 bg-white shadow rounded-3xl">
             <div class="flex justify-between items-center p-5">
                 <p class="font-bold text-lg"> <i class="fa-regular fa-clock text-gray-500"></i> Call History</p>
                 <button class="py-[12px] px-[36px] w-[100px] h-[50px] rounded-3xl text-[16px] text-white bg-[#00A63E]">Clear</button>
             </div>
         </section>
     </section>
-   </main> 
+   </main>
+
+
+
+   <!-- js file -->
+    <script src="js/index.js"></script>
 </body>
 </html>

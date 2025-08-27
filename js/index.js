@@ -21,7 +21,7 @@ const callHistory = document.getElementById('call-history-parent');
 for (let button of callButtons) {
     button.addEventListener('click', function() {
         const card = button.closest('#helpline-section');
-        const serviceName = card.querySelector('h3').innerText
+        const serviceName = card.querySelector('h3').innerText;
         const serviceNumber = card.querySelector('.helpline-number').innerText;
         if (coins < 20) {
             alert('you dont have enough coins to make a call');

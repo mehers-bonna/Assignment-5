@@ -31,7 +31,7 @@ for (let button of callButtons) {
         coins = coins - 20;
         coinElement.innerText = coins;
 
-        alert(`Calling ${serviceName} ${serviceNumber}...`);
+        alert(`📞 Calling ${serviceName} ${serviceNumber}...`);
 
         // call history
 

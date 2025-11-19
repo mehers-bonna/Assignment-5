@@ -1,44 +1,36 @@
-<!-- Questions and Answers -->
+# Emergency Services
 
+![Emergency Services Screenshot](https://i.ibb.co.com/Y7dWMN40/emergency-Services.png)
 
-<!-- Question 1 -->
-1.What is the difference between getElementById, getElementsByClassName, and querySelector / querySelectorAll?
+## Overview
+Emergency Services is a simple, responsive website built with **HTML, CSS, and JavaScript**.  
+It provides essential emergency service information with a clean and user-friendly interface.
 
-Answers: 
-***getElementById is being used to select a single element by their id name.
+## Features
+- Responsive design for desktop and mobile
+- Quick access to emergency contacts
+- Simple and intuitive UI
+- Works on all modern browsers
 
-***getElementsByClassName is being used to select one or more elements by their class name.
+## Tech Stack
+- **Frontend:** HTML, CSS, JavaScript
 
-***querySelector is being used to select the first matching element using CSS selector style.
+## Dependencies
+- No external dependencies (pure HTML, CSS, JS)
 
-***querySelectorAll is being used to select all matching element using CSS selector style.
+## Live Links
+-Live Link: https://mehers-bonna.github.io/Assignment-5/
+-Github Repository: https://github.com/mehers-bonna/Assignment-5.git
 
-<!-- Question 2 -->
-2.How do you create and insert a new element into the DOM?
+## Installation & Setup
+1. Clone the repository
+```bash
+git clone https://github.com/YOUR_USERNAME/emergency-services.git
 
-Answers:
-***For creating a new element into the DOM i will use document.createElement() this method.
+2.Navigate to the project folder
 
-***For insert a new element into the DOM i will use appendChild() this method.
+cd emergency-services
 
-<!-- Question 3 -->
-3.What is Event Bubbling and how does it work?
+3.Open index.html in your browser
 
-Answers:
-***Event Bubbling is a JavaScript event propagation method and it works by letting an event triggered on a child element automatically propagate up to its parent elements.
-
-<!-- Question 4 -->
-
-4.What is Event Delegation in JavaScript? Why is it useful?
-
-Answers:
-***Event Delegation is a technique where instead of attaching separate event listeners to child elements it attach a single event listener to the parent element and Instead of adding separate listeners for multiple child elements the parent's single listener handles them all.
-
-<!-- Question 5 -->
-
-5.What is the difference between preventDefault() and stopPropagation() methods?
-
-Answers:
-***preventDefault() method is being used to prevent the default browser action of an element.
-
-***stopPropagation() method is being used to prevent the event from bubbling or capturing up to parent elements.
+# You can simply double-click index.html or serve via local server
